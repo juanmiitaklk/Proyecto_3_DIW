@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../img/logo.png" />
+    <title>Servicios | BitMoney</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="../CSS/Index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      body{
+        background-color: var(--background-color)
+      }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-black text-center" style="padding: 4px 0; margin-bottom: 8px">
+        <div class="container">
+            <h1 id="Presentacion" class="font-weight-light text-white">
+                SERVICIOS
+            </h1>
+        </div>
+    </header>
+
+    <hr style="border: none; height: 4px; background-color:var(--text-color)" />
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../html/index.html"><img src="../img/Logo-header.png" alt="Logo"
+                    style="max-height: 60px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../html/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/PreguntasFrecuentes.html">Preguntas QA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/Contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/Calculadora.html">Sobre nosotros </a>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row">
+
+        <!-- Estilos propios de las tarjetas -->
+        <style>
+          .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; 
+            gap: 20px; 
+          }
+    
+          .parent {
+            flex: 1 1 calc(50% - 20px); 
+            max-width: 400px; 
+            perspective: 1000px;
+          }
+    
+          .card {
+            position: relative;
+            padding-top: 20px;
+            border-radius: 15px;
+            border: 3px solid #141414;
+            transform-style: preserve-3d;
+            background: linear-gradient(135deg, #0000 18.75%, #14c99a 0 31.25%, #0000 0),
+              repeating-linear-gradient(45deg,#14c99a -6.25% 6.25%, #141414 0 18.75%);
+            background-size: 60px 60px;
+            background-color: #141414;
+            width: 100%;
+            box-shadow: rgba(142, 142, 142, 0.3) 0px 30px 30px -10px;
+            transition: all 0.5s ease-in-out;
+            overflow: hidden; 
+          }
+    
+          .card:hover {
+            background-position: 50px 50px;
+            transform: rotate3d(0.5, 1, 0, 30deg);
+          }
+    
+          .card img {
+            width: 100%; 
+            height: auto; 
+            border-bottom: 3px solid #141414;
+          }
+    
+          .content-box {
+            background: #8ed500;
+            border-radius: 0 0 15px 15px;
+            transition: all 0.5s ease-in-out;
+            padding: 20px;
+            transform-style: preserve-3d;
+          }
+    
+          .content-box .card-title {
+            display: block;
+            color: #141414;
+            font-size: 25px;
+            font-weight: 900;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+          }
+    
+          .content-box .card-content {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #141414;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+          }
+    
+          .content-box .see-more {
+            cursor: pointer;
+            margin-top: 1rem;
+            display: block;
+            font-weight: 900;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #8ed500;
+            border-radius: 5px;
+            background: #141414;
+            padding: 0.7rem 1rem;
+            text-align: center;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 0.5s ease-in-out;
+          }
+    
+          .content-box .see-more:hover {
+            background: #8ed500;
+            color: #141414;
+          }
+        </style>
+    
+        <!-- Tarjeta 1 -->
+        <div class="parent">
+          <div class="card">
+            <img src="../img/asicMiner2.png" alt="ASIC Miner Image" />
+            <div class="content-box">
+              <span class="card-title">AntiMiner T19 pro</span>
+              <p class="card-content">
+                Potencia: 23500MH/S <br>
+                Consumo eléctrico: 5170w    <br>
+              </p>
+              <h3><b>2000€</b></h3>
+              <span class="see-more">COMPRA YA!</span>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Tarjeta 2 -->
+        <div class="parent">
+          <div class="card">
+            <img src="../img/NerdMiner1.png" alt="ASIC Miner Image" />
+            <div class="content-box">
+              <span class="card-title">Nerd Miner v.2</span>
+              <p class="card-content">
+                Potencia: 7,8MH/S <br>
+                Consumo eléctrico: 1,55w    <br>
+              </p>
+              <h3><b>59,99€</b></h3>
+              <span class="see-more">COMPRA YA!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center py-3 mt-5">
+        <div class="container">
+            <p>&copy; 2025 BitMoney. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="../img/logo.png" />
+  <title> FQA | BitMoney</title>
+
+  <!-- Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/Index.css" />
+
+
+  <style>
+    :root {
+      --primary-color: #14c99a;
+      --secondary-color: #a400fd;
+      --text-color: #696969;
+      --background-color: #182632;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    .container2 {
+      width: 70%;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: var(--background-color);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+
+    .qa-card {
+      background-color: var(--background-color);
+      border-radius: 8px;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .qa-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: var(--secondary-color);
+      animation: moveLine 2s infinite alternate;
+    }
+
+    .qa-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: var(--secondary-color);
+      animation: moveLine 2s infinite alternate;
+    }
+
+    @keyframes moveLine {
+      0% {
+        transform: scaleX(0);
+        transform-origin: left;
+      }
+      100% {
+        transform: scaleX(1);
+        transform-origin: right;
+      }
+    }
+
+    .qa-item {
+      border: 1px solid var(--primary-color);
+      margin-bottom: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .qa-header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 5px;
+      text-align: left;
+    }
+
+    .qa-header:hover {
+      background-color: var(--secondary-color);
+    }
+
+    .qa-answer {
+      padding: 15px;
+      background-color: #f9f9f9;
+      display: none;
+      border-top: 1px solid #dddddd;
+    }
+
+    .qa-item.active .qa-answer {
+      display: block;
+    }
+
+    .navbar-nav .nav-link {
+      color: var(--secondary-color);
+    }
+
+    h3{
+      color:aliceblue
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../html/index.html"><img src="../img/Logo-header.png" alt="Logo"
+          style="max-height: 60px"/></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../html/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/PreguntasFrecuentes.html">Preguntas QA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/Contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/Calculadora.html">Sobre nosotros </a>
+          </li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- FAQ card -->
+  <div class="container2">
+    <h1>Preguntas Frecuentes</h1>
+    <h3>Lottery Mining</h3>
+
+    <div class="qa-card">
+      <div class="qa-item">
+        <div class="qa-header">¿Qué es Lottery Mining y cómo funciona?</div>
+        <div class="qa-answer">
+          <p>Lottery Mining es un modelo de minería de criptomonedas en el que los participantes contribuyen con poder de cómputo sin recibir pagos constantes, sino que tienen la oportunidad de ganar recompensas de forma aleatoria. Es similar a una lotería: los mineros generan bloques, pero solo algunos reciben recompensas, dependiendo de la suerte y la cantidad de potencia aportada.</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-header">¿Cuáles son los riesgos y beneficios de participar en Lottery Mining? </div>
+        <div class="qa-answer">
+          <p>Beneficios:</p>
+          <p>● Posibilidad de obtener una recompensa grande sin dividirla con otros, como sucede en los pools tradicionales.</p>
+          <p>● Es una opción atractiva para quienes buscan una alternativa a la minería convencional.</p>
+          <br>
+          <p>Riesgos:</p>
+          <p>● No hay garantía de recibir recompensas, ya que todo depende del azar.</p>
+          <p>● Puede no ser rentable a largo plazo si no se consiguen bloques con éxito.</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-header">¿Qué diferencia hay entre Lottery Mining y la minería tradicional de criptomonedas?</div>
+        <div class="qa-answer">
+          <p> ● En la minería tradicional, los mineros reciben pagos proporcionales a su poder de cómputo.</p>
+          <p>● En Lottery Mining, solo unos pocos mineros reciben recompensas, lo que hace que los pagos sean más inciertos, pero potencialmente más grandes.</p>
+        </div>
+      </div>
+      <br>
+      </div>
+
+      <h3>Pools</h3>
+      <div class="qa-card">
+      <div class="qa-item">
+        <div class="qa-header">¿Qué es un pool de minería y por qué unirse a uno?</div>
+        <div class="qa-answer">
+          <p>Un pool de minería es un grupo de mineros que combinan su poder de cómputo para aumentar sus probabilidades de encontrar bloques y obtener recompensas. Unirse a un pool permite obtener pagos más regulares en comparación con la minería en solitario, ya que las recompensas se distribuyen entre todos los participantes según su contribución.</p>
+        </div>
+      </div>
+
+
+  <div class="qa-item">
+    <div class="qa-header">¿Cómo se reparten las recompensas en un pool de minería?</div>
+    <div class="qa-answer">
+      <p>Depende del esquema de pago del pool. Algunos métodos comunes incluyen:</p>
+      <p><b>● PPS (Pay-Per-Share):</b>  Se paga a los mineros por cada participación válida enviada, independientemente de si el pool encuentra un bloque.</p>
+      <p><b>● PPLNS (Pay-Per-Last-N-Shares):</b> Se paga en función de las últimas contribuciones cuando se encuentra un bloque, lo que favorece a los mineros más constantes.</p>
+      <p><b>● PROP (Proportional):</b> Las recompensas se dividen proporcionalmente entre los mineros según su contribución al bloque encontrado.</p>
+    </div>
+  </div>
+
+  <div class="qa-item">
+    <div class="qa-header">¿Cuáles son los criterios para elegir el mejor pool de minería para mi equipo y criptomoneda?</div>
+    <div class="qa-answer">
+      <p> ● Tasa de comisión: Cuánto cobra el pool por participar (normalmente entre 1% y 3%).</p>
+      <p> ● Método de pago: PPS, PPLNS, PROP u otros, según lo que mejor se adapte a tu estrategia.</p>
+      <p> ● Ubicación del servidor: Un servidor cercano mejora la latencia y eficiencia de la minería..</p>
+      <p> ● Fiabilidad y reputación: Un pool estable y con buena reputación reduce riesgos de estafas o caídas del servicio.</p>
+      <p> ● Tipo de criptomoneda: No todos los pools minan las mismas criptos, por lo que es clave elegir uno compatible con tu hardware y preferencias.</p>
+    </div>
+  </div>
+    </div>
+  </div>
+  
+<!-- Footer -->
+  <footer class="bg-black text-white text-center py-3 mt-5">
+    <div class="container">
+      <p>&copy; 2025 BitMoney. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Script de js para desplegar los cards -->
+  <script>
+    const qaItems = document.querySelectorAll('.qa-item');
+
+    qaItems.forEach(item => {
+      const header = item.querySelector('.qa-header');
+      header.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+  <!-- Link javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
